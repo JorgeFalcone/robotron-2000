@@ -85,42 +85,52 @@ imagemRobo.addEventListener("click", (evento) => {
 
 
 function mudarCor(imagemRobo){
+    const titulo = document.querySelector(".titulo")
+    const contorno = document.body.style
+    console.log(contorno)
+    
 
     if(cor === 0)
     {
         imagemRobo.src = "img/Robotron 2000 - Vermelho.png"
         cor++
-        console.log(cor)
+        titulo.style.color  = 'green'
+        contorno.setProperty('--main-cinza', 'red')
     }
     else if(cor === 1)
     {
         imagemRobo.src = "img/Robotron 2000 - Azul.png"
         cor++
-        console.log(cor)
+        titulo.style.color  = 'orange'
+        contorno.setProperty('--main-cinza', 'blue')
     }
     else if(cor === 2)
     {
         imagemRobo.src = "img/Robotron 2000 - Branco.png"
         cor++
-        console.log(cor)
+        titulo.style.color  = 'black'
+        contorno.setProperty('--main-cinza', 'white')
     }
     else if(cor === 3)
     {
         imagemRobo.src = "img/Robotron 2000 - Preto.png"
         cor++
-        console.log(cor)
+        titulo.style.color  = 'white'
+        contorno.setProperty('--main-cinza', 'gray')
     }
     else if(cor === 4)
     {
         imagemRobo.src = "img/Robotron 2000 - Rosa.png"
         cor++
-        console.log(cor)
+        titulo.style.color  = 'greenyellow'
+        contorno.setProperty('--main-cinza', 'pink')
     }
     else if(cor === 5)
     {
         imagemRobo.src = "img/Robotron 2000 - Amarelo.png"
         cor = 0
-        console.log(cor)
+        titulo.style.color  = 'purple'
+        contorno.setProperty('--main-cinza', 'yellow')
     }
 
 

@@ -1,5 +1,4 @@
 :root {
-    --main-cinza: #e4d827;
     --main-branco: #FFFFFF;
     --main-preto: #000000;
 }
@@ -9,6 +8,7 @@
 }
 
 body {
+    --main-cinza: yellow;
     background: url(../img/fundo.jpg);
     background-position: center center;
     background-size: cover cover;
@@ -59,7 +59,7 @@ main {
     line-height: 0.8;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    color: rgb(180, 62, 209);
+    color: purple 
     
 
 }
