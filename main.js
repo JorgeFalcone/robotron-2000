@@ -4,6 +4,8 @@ const estatistica = document.querySelectorAll("[data-estatistica]")
 
 const controle = document.querySelectorAll("[data-controlador]")
 
+var cor = 0
+
 const pecas = {
     "bracos": {
         "forca": 29,
@@ -74,3 +76,54 @@ function atualizaEstatistica(peca, operacao) {
 
 }
 
+
+const imagemRobo = document.querySelector(".robo")
+
+imagemRobo.addEventListener("click", (evento) => {
+    mudarCor(evento.target);
+})
+
+
+function mudarCor(imagemRobo){
+
+    if(cor === 0)
+    {
+        imagemRobo.src = "img/Robotron 2000 - Vermelho.png"
+        cor++
+        console.log(cor)
+    }
+    else if(cor === 1)
+    {
+        imagemRobo.src = "img/Robotron 2000 - Azul.png"
+        cor++
+        console.log(cor)
+    }
+    else if(cor === 2)
+    {
+        imagemRobo.src = "img/Robotron 2000 - Branco.png"
+        cor++
+        console.log(cor)
+    }
+    else if(cor === 3)
+    {
+        imagemRobo.src = "img/Robotron 2000 - Preto.png"
+        cor++
+        console.log(cor)
+    }
+    else if(cor === 4)
+    {
+        imagemRobo.src = "img/Robotron 2000 - Rosa.png"
+        cor++
+        console.log(cor)
+    }
+    else if(cor === 5)
+    {
+        imagemRobo.src = "img/Robotron 2000 - Amarelo.png"
+        cor = 0
+        console.log(cor)
+    }
+
+
+
+
+}

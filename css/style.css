@@ -45,6 +45,10 @@ main {
     top: -5%;
 }
 
+.robo:hover{
+    cursor: pointer;
+}
+
 .titulo {
     transform: rotate(180deg);
     font-weight: 500;
@@ -88,7 +92,7 @@ main {
 .peca-titulo {
     color: var(--main-branco);
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 2.2em;
 }
 
 .controle {
@@ -155,18 +159,20 @@ main {
 /****************************** Estatísticas *****/
 .estatisticas {
     flex-basis: 23%;
-    padding: 2em 2em 0;
+    height: 100%;
+    padding: 2em 2em;
 }
 
 .estatistica {
     color: var(--main-branco);
     display: flex;
     align-items: flex-start;
+    margin: 2%;
     height: 25%;
 }
 
 .estatistica-titulo {
-    font-size: 1.5em;
+    font-size: 1.8em;
     border-bottom: 1px solid var(--main-cinza);
     flex-basis: 40%;
     text-transform: uppercase;
