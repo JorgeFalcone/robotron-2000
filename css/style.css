@@ -1,5 +1,5 @@
 :root {
-    --main-cinza: #CCCCCC;
+    --main-cinza: #e4d827;
     --main-branco: #FFFFFF;
     --main-preto: #000000;
 }
@@ -41,7 +41,7 @@ main {
     height: 110%;
     z-index: 1;
     position: absolute;
-    left: -20%;
+    left: 5%;
     top: -5%;
 }
 
@@ -55,7 +55,9 @@ main {
     line-height: 0.8;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    color: rgba(255,255,255,0.8)
+    color: rgb(180, 62, 209);
+    
+
 }
 
 .box {
@@ -86,7 +88,7 @@ main {
 .peca-titulo {
     color: var(--main-branco);
     text-transform: uppercase;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .controle {
